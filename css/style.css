@@ -5,3 +5,17 @@
   margin: 0;
   padding: 0;
 }
+
+.debug .container {
+  border: 1px solid black;
+  height: 100px;
+}
+
+[class*="col-lg-"] {
+  height: 100%;
+  border: 1px solid grey;
+}
+
+.debug footer {
+  background-color: lightcoral;
+}

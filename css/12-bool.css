@@ -109,7 +109,7 @@
     margin-left: calc((100% / 12) * 11)
   }
 
-  .display.none.xs {
+  .display-xs-none {
     display: none;
   }
 }
@@ -208,7 +208,7 @@
     margin-left: calc((100% / 12) * 11)
   }
 
-  .display.none.md {
+  .display-md-none {
     display: none;
   }
 }
@@ -307,7 +307,7 @@
     margin-left: calc((100% / 12) * 11)
   }
 
-  .display.none.lg {
+  .display-lg-none {
     display: none;
   }
 }

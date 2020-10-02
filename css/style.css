@@ -26,8 +26,12 @@
 
 html {
   font-family: Open Sans, Segoe UI, Tahoma, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 .ghost-align::before {
@@ -46,9 +50,15 @@ html {
 
 /* NAVBAR */
 
+.fixed_nav {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
 header .container:first-child {
   height: 70px;
-  background-color: #ffffff;
 }
 
 [class*="col-lg-"] {
@@ -63,7 +73,7 @@ header .container:first-child {
   text-align: right;
 }
 
-[class*="nav_"] ul {
+[class*="nav_"] ul, .nav_menu {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -85,6 +95,10 @@ header .container:first-child {
   padding-left: 0.5rem;
 }
 
+.nav_menu {
+  padding-right: 1rem;
+}
+
 /* JUMBOTRON */
 
 .container.jumbotron {
@@ -95,11 +109,18 @@ header .container:first-child {
   text-align: center;
 }
 
-.jumbotron p {
+.jumbotron p, .jumbotron h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .jumbotron img {
   width: 150px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
 }

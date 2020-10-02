@@ -6,16 +6,100 @@
   padding: 0;
 }
 
+/* DEBUG */
+
 .debug .container {
   border: 1px solid black;
   height: 100px;
 }
 
-[class*="col-lg-"] {
+.debug [class*="col-lg-"] {
   height: 100%;
   border: 1px solid grey;
 }
 
 .debug footer {
   background-color: lightcoral;
+}
+
+/* HELPERS */
+
+html {
+  font-family: Open Sans, Segoe UI, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.ghost-align::before {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.centering {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* NAVBAR */
+
+header .container:first-child {
+  height: 70px;
+  background-color: #ffffff;
+}
+
+[class*="col-lg-"] {
+  height: 100%;
+}
+
+.logo img {
+  width: 80px;
+}
+
+[class*="nav_"] {
+  text-align: right;
+}
+
+[class*="nav_"] ul {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+[class*="nav_"] ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+[class*="nav_"] ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.nav_right ul li:not(:first-child) a {
+  border-left: 1px solid black;
+  padding-left: 0.5rem;
+}
+
+/* JUMBOTRON */
+
+.container.jumbotron {
+  background-image: url('../img/hero-bg.jpg');
+  height: 400px;
+  max-width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.jumbotron p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.jumbotron img {
+  width: 150px;
 }

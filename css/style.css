@@ -52,13 +52,14 @@ h1 {
 
 .fixed_nav {
   position: fixed;
+  top: 0;
   width: 100%;
   background-color: #ffffff;
   z-index: 1;
 }
 
 header .container:first-child {
-  height: 70px;
+  height: 60px;
 }
 
 [class*="col-lg-"] {
@@ -103,7 +104,7 @@ header .container:first-child {
 
 .container.jumbotron {
   background-image: url('../img/hero-bg.jpg');
-  height: 400px;
+  height: 550px;
   max-width: 100%;
   color: white;
   text-align: center;
@@ -123,4 +124,53 @@ header .container:first-child {
   html {
     font-size: 10px;
   }
+}
+
+/* CARDS */
+
+.card {
+  background-color: #FAFAFA;
+  text-align: center;
+  padding: 6rem 3rem 2rem 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border-radius: 5px;
+}
+
+.card:nth-child(1) {
+  margin-right: 1rem;
+}
+
+.card:nth-child(2) {
+  margin-left: 1rem;
+}
+
+.col-lg-6.card {
+  width: calc(50% - 1rem);
+}
+
+.card img.logo {
+  width: 50%;
+}
+
+.card img {
+  width: 80%;
+}
+
+.card a, .card h2 {
+  display: block;
+  text-decoration: none;
+}
+
+.card a, .card h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* BANNER */
+
+.container.banner {
+  max-width: 100%;
+  background-image: url('../img/index-banner.jpg');
+  height: 700px;
 }

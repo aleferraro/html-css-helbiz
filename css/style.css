@@ -59,6 +59,15 @@ a {
   transform: translate(-50%, -50%);
 }
 
+.v-center {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.rel {
+  position: relative;
+}
+
 .white {
   color: white;
 }
@@ -81,7 +90,7 @@ header .container:first-child {
   height: 60px;
 }
 
-[class*="col-lg-"] {
+header [class*="col-lg-"] {
   height: 100%;
 }
 
@@ -181,23 +190,24 @@ header .container:first-child {
   background-image: url('../img/index-banner.jpg');
   background-size: 100% 600px;
   background-repeat: no-repeat;
-  height: 800px;
-}
-
-.banner > .col-lg-4 {
+  height: 600px;
+  margin-bottom: 300px;
   position: relative;
-  text-align: center;
 }
 
-.banner > .col-lg-4 > div {
-  position: absolute;
-  bottom: 7rem;
-  left: 50%;
-  transform: translateX(-50%);
+.banner > .down {
+  position: relative;
+  width: 100%;
+  top: 300px;
+}
+
+.rel-d200 {
+  position: relative;
+  top: 350px;
 }
 
 .banner img {
-  width: 80%;
+  height: 500px;
 }
 
 /* CALL TO ACTION */
@@ -207,6 +217,11 @@ header .container:first-child {
   height: 550px;
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+.d-200 {
+  position: relative;
+  top: 50%;
 }
 
 .container .cta {
